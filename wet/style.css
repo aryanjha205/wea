@@ -1,0 +1,141 @@
+/* style.css */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #dcdcdc 50%, #e9e9e9 50%);
+    font-family: Arial, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#google_translate_element {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+main {
+    width: 320px;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main form input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+main form button {
+    background-color: #f78a55;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+main form button i {
+    margin-left: 5px;
+}
+
+.date-time {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result .name {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.result .temperature img {
+    width: 100px;
+    margin: 10px 0;
+}
+
+.result .temperature figcaption {
+    font-size: 2em;
+}
+
+.result .description {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+.result ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.result ul li {
+    background-color: #091ec1;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.result ul li:nth-child(2) {
+    background-color: #b56291;
+}
+
+.result ul li:nth-child(3) {
+    background-color: #48567b;
+}
+
+.result ul li i {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+#error-message {
+    color: red;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#loader {
+    text-align: center;
+    color: #555;
+}
